@@ -1,0 +1,24 @@
+package me.Kelson
+
+class TestCommands implements CommandExecutor, Listener{
+   
+   public void onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]){
+   if(cmd.getName().equalsIgnoreCase("testcmds") && sender.hasPermission){
+     if(args.length == 0){
+     sender.sendMessage("Test commands list: /testcmds test");
+     return true;
+     }
+     if(args.length == 1 && args[0].equalsIgnoreCase("test"){
+     sender.sendMessage("Hello %s this command sends a message to you and does something else");
+     if(player.isOp(){
+     
+       }
+     }
+     if(args.length >1){
+     sender.sendMessage(ChatColor.DARK_RED + "Error: " + ChatColor.RED + "Too many arguments!");
+     }
+   }
+   return false;
+   }
+
+}
