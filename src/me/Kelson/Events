@@ -1,0 +1,21 @@
+package me.Kelson
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+public class Events implements Listener{
+
+@EventHandler
+	public void onPlayerJoin(PlayerJoinEvent event){
+		Player player = event.getPlayer();
+		if(player.getName().equals("<yourPlayerName>")){
+		//Uncomment this below if you want to say something when you join the server you put this in
+		//player.chat("Hello everyone");
+			Bukkit.broadcastMessage((ChatColor.translateAlternateColorCodes('^', plugin.getConfig().getString("Owner"))));//You would make a config.yml to do this, in there type Owner: <message>
+		}
+	}
+}
