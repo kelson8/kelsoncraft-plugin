@@ -1,9 +1,14 @@
 package me.Kelson
 
-class TestCommands implements CommandExecutor, Listener{
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.event.Listener;
+
+public class TestCommands implements CommandExecutor, Listener{
    
    public void onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]){
-   if(cmd.getName().equalsIgnoreCase("testcmds") && sender.hasPermission){
+   if(cmd.getName().equalsIgnoreCase("testcmds") && sender.hasPermission("kelson-test.testcmds")){
      if(args.length == 0){
      sender.sendMessage("Test commands list: /testcmds test");
      return true;
@@ -11,7 +16,7 @@ class TestCommands implements CommandExecutor, Listener{
      if(args.length == 1 && args[0].equalsIgnoreCase("test"){
      sender.sendMessage("Hello %s this command sends a message to you and does something else");
      if(player.isOp(){
-     
+       sender.sendMessage("Hello %s, your an op");
        }
      }
      if(args.length >1){
