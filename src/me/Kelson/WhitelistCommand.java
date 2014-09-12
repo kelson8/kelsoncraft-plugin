@@ -17,7 +17,7 @@ public class WhitelistCommand implements CommandExecutor
 		public boolean onCommand(CommandSender sender, Command cmd, 
 				String CommandLabel, String[] args) {
 			
-			      if(cmd.getName().equalsIgnoreCase("whitelist") && sender.hasPermission("kelson.whitelist")){
+			      if(cmd.getName().equalsIgnoreCase("kwhitelist") && sender.hasPermission("kelson.whitelist")){
 			        if(args.length == 0 && sender.hasPermission("kelson.whitelist")){
 			        sender.sendMessage("Too few arguments, use the command like this /whitelist on/off");
 			        return true;
