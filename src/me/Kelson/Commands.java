@@ -173,8 +173,7 @@ public class Commands extends JavaPlugin implements Listener, Interface{
 		}
 		PluginDescriptionFile pdfFile = this.getDescription();
 		this.logger.info(pdfFile.getName() + " v" + pdfFile.getVersion() +  " Has Been Enabled!");
-	    this.getCommand("disablewhitelist").setExecutor(new DisablewhitelistCommand(this));
-	    this.getCommand("enablewhitelist").setExecutor(new EnablewhitelistCommand(this));
+	    this.getCommand("kwhitelist").setExecutor(new WhitelistCommand(this));
 	    this.getCommand("tempfly").setExecutor(new TempflyCommand(this));
 	    this.getCommand("kheal").setExecutor(new KHealCommand(this));
 	    this.getCommand("test").setExecutor(new TestCommand(this));
