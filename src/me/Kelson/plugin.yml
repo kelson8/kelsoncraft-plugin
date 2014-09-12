@@ -18,31 +18,16 @@ commands:
     permission: kelson.tempfly
     permission-message: You do not have permission to use this command!
 
-  test1:
-    description: Admin testing
-
   showxp:
     description: Shows the amount of xp the player has.
 
   location:
     description: Shows the location of the world your in.
 
-  testcmd1:
-    description: Testing
-
-  testcmd2:
-    description: Testing
-
   ipbans:
     description: Shows the ips that are banned in the server.
     permission: kelson.ipbans
     permission-message: You do not have permission to use this command!
-
-  testcmd4:
-    description: Testing
-
-  worldtype:
-    description: Testing
 
   kheal:
     description: Heals the player heals another player if a name is specified.
