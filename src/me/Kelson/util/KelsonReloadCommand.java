@@ -16,7 +16,7 @@ public class KelsonReloadCommand implements CommandExecutor{
 			}
 		public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 		{
-		if(cmd.getName().equalsIgnoreCase("kbp-reload")){
+		if(cmd.getName().equalsIgnoreCase("kbp")){
 			if(args.length == 0){
 				
 			}
@@ -29,8 +29,8 @@ public class KelsonReloadCommand implements CommandExecutor{
 			Player player = (Player) sender;
 			if(sender instanceof Player){
 				if(player.hasPermission("kelson.reload")){
-		    	   plugin.reloadConfig();
-		    	   plugin.getServer().broadcastMessage(ChatColor.WHITE + player.getName() + " has reloaded kelsons plugin's config!");
+		    	        plugin.reloadConfig();
+		    	        plugin.getServer().broadcastMessage(ChatColor.WHITE + player.getName() + " has reloaded kelsons plugin's config!");
                   
 	              }			
 	           }
