@@ -23,8 +23,8 @@ public class TestCommands implements CommandExecutor, Listener{
      if(args.length >1){
      sender.sendMessage(ChatColor.DARK_RED + "Error: " + ChatColor.RED + "Too many arguments!");
      }
-     if(player.isOp(){
      Player player = (Player) sender;
+     if(player.isOp(){
        sender.sendMessage("Hello %s, your an op".replace("%s", player.getName);
        }
      }
