@@ -179,7 +179,6 @@ public class Commands extends JavaPlugin implements Listener, Interface{
 	    this.getCommand("test").setExecutor(new TestCommand(this));
 	    this.getCommand("location").setExecutor(new LocationCommand(this));
 	    this.getCommand("kelson-reload").setExecutor(new me.Kelson.util.KelsonReloadCommand(this));
-	    this.getCommand("kelson-reload").setPermissionMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("kelson-reloadPermissionMessage")));
 	    this.getCommand("kmotd").setExecutor(new KMotdCommand(this));
 	    this.getCommand("setkmotd").setExecutor(new SetKMotdCommand(this));
 	    this.getCommand("playerinfo").setExecutor(this);
