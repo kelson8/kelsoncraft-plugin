@@ -316,7 +316,7 @@ public class Commands extends JavaPlugin implements Listener, Interface{
 	        			+ ChatColor.GREEN + "Health: " + ChatColor.AQUA + player.getHealth());
 	        	return true;
 	        	    }
-	        	} if (args.length == 1 && sender.hasPermission("kelson.playerinfo.others")) {
+	        	} if (args.length == 1) {
 	        		Player targetPlayer = player.getServer().getPlayer(args[0]);
 	        		
 	        	sender.sendMessage(ChatColor.AQUA + targetPlayer.getName() + "'s playerinfo: \n"
